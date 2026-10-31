@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="An ethical analysis of student surveys, anonymity, privacy, transparency, informed consent, and responsible data science practices.">
-  <meta property="og:title" content="Assigment 3">
-  <meta property="og:description" content="An ethical analysis of student surveys, anonymity, privacy, transparency, informed consent, and responsible data science practices.">
+  <meta name="description" content="An ethical analysis of AI hiring, algorithmic fairness, accountability, and responsible automated recruitment.">
+  <meta property="og:title" content="When Hiring Technology Discriminates">
+  <meta property="og:description" content="An ethical analysis of AI hiring, algorithmic fairness, accountability, and responsible automated recruitment.">
   <meta property="og:url" content="https://jsuyonh.github.io/blogs/assignment-3/">
   <meta property="og:type" content="article">
   <link rel="icon" href="/icons8-sparkles-16.png" type="image/gif">
@@ -16,54 +16,23 @@
   <link rel="stylesheet" href="/css/single.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <title>Assignment 3 | Juan Félix Suyon Hinojosa Profile</title>
+  <title>When Hiring Technology Discriminates | Juan Félix Suyon Hinojosa</title>
   <style>
     body { font-family: Roboto, sans-serif; line-height: 1.7; }
     .article-container { max-width: 900px; }
     .article-container h1, .article-container h2, .article-container h3 { font-family: Lora, serif; margin-top: 1.5rem; text-align: center; }
-    .article-container p, .article-container li {
-  font-size: 1.04rem;
-  text-align: justify;
-}
+    .article-container p, .article-container li { font-size: 1.04rem; text-align: justify; }
     .article-meta { color: #6c757d; margin-bottom: 2rem; text-align: center; }
     .article-container img { max-width: 100%; height: auto; }
-    .hero-figure { margin: 0 auto 2rem; text-align: center; }
-    .hero-image { display: block; width: 100%; max-width: 1100px; height: auto; margin: 0 auto; border-radius: 12px; }
-    .survey-image { display: block; width: 100%; max-width: 664px; height: auto; margin: 20px auto 28px; }
     .article-container ul, .article-container ol { list-style-position: inside; padding-left: 0; margin: 1rem auto 1.5rem; }
     .article-container li { margin-bottom: .65rem; }
     .article-container li::marker { color: #0d6efd; }
-
-/* Dark theme */
-body {
-    background-color: #17191a;
-    color: #e8e8e8;
-}
-
-.article-container {
-    background-color: transparent;
-    color: #e8e8e8;
-}
-
-.article-container h1,
-.article-container h2,
-.article-container h3 {
-    color: #f2f2f2;
-}
-
-.article-container p,
-.article-container li {
-    color: #d8d8d8;
-}
-
-.article-meta {
-    color: #aeb4bb;
-}
-
-.article-container a {
-    color: #8ab4f8;
-}
-    
+    body { background-color: #17191a; color: #e8e8e8; }
+    .article-container { background-color: transparent; color: #e8e8e8; }
+    .article-container h1, .article-container h2, .article-container h3 { color: #f2f2f2; }
+    .article-container p, .article-container li { color: #d8d8d8; }
+    .article-meta { color: #aeb4bb; }
+    .article-container a { color: #8ab4f8; }
   </style>
 </head>
 <body class="light">
@@ -78,64 +47,92 @@ body {
 </header>
 <main class="container article-container py-5">
   <p><a href="/blogs/">← Back to Blogs</a></p>
-  <h1>Assignment 3</h1>
-  <p class="article-meta">October 25, 2026 · Assignment 3 · Privacy · Data Ethics</p>
+  <h1>When Hiring Technology Discriminates: Fairness, Accountability, and the Human Cost of Automated Recruitment</h1>
+  <p class="article-meta">October 31, 2026 · Assignment 3 · AI Ethics · AI Hiring</p>
   <article>
-    <figure class="hero-figure">
-      <img class="hero-image" src="/images/survey-ethics-hero.png" alt="Illustration about survey anonymity, student privacy, and data ethics">
-    </figure>
-    <h2>Introduction: Can a survey really be anonymous?</h2>
-    <p>As a data analyst, I am hired by an educational institution to process the results of a survey that students are required to complete at the end of a course. Students receive a 10-question survey; to complete it, they must access a specific URL in their web browser—which is available only for a short period—and log in using their organizational username and password.</p>
-    <p>At the beginning of the survey, the course name is requested, but the participant’s name is not. Meanwhile, the page description states that all responses and the survey itself are anonymous.</p>
-    <p>The executive leadership team intends to use the survey results to determine which courses need to be redesigned or updated.</p>
-    <p>As a data analyst, my role is to provide the executive team with actionable insights that will enable them to take further steps.</p>
-    <p>The first question on the survey is shown here:</p>
-    <img class="survey-image" src="/images/survey-question.png" alt="Survey question: This course met all of the course objectives. Rating scale from 0 to 10, from strongly disagree to strongly agree.">
-    <p>The organization has a legitimate objective. However, the fact that a business purpose is useful does not automatically mean that every method used for data collection or analysis is ethical. Therefore, the ethical issue is not merely whether the survey is anonymous, but whether that claim is accurate, understandable, and supported by the underlying system.</p>
-    <p>In this post, I will provide commentary from the perspective of a data analyst, drawing on the text by Martens, D. (2022), “Data Science Ethics: Concepts, Techniques, and Cautionary Tales”. Their FAT Flow framework considers the various stages of a data project and asks whether the practices are fair, accountable, and transparent.</p>
+    <h2>Introduction</h2>
+    <p>Technology is changing the way companies recruit employees. Today, many organizations use automated systems and artificial intelligence (AI) tools to review resumes, filter applications, assess candidates, and support hiring decisions. These technologies can save time, reduce administrative work, and help employers manage a large number of applications.</p>
+    <p>However, an important question must be considered: <strong>Can technology make recruitment more efficient without making it less fair?</strong></p>
+    <p>Automated recruitment does not automatically guarantee equal opportunities. If a system uses discriminatory rules, inappropriate criteria, or biased information, it can produce unfair results. This is especially concerning because candidates may not know why their applications were rejected or who is responsible for the decision.</p>
+    <p>In <em>The Ethics of Artificial Intelligence: Principles, Challenges, and Opportunities</em>, Luciano Floridi (2023) explains that ethical AI requires more than technical performance. It also requires principles, accountability, transparency, and responsible governance.</p>
+    <p>This blog explores the ethical challenges of automated recruitment, examines a real case involving iTutorGroup, and discusses practical ways employers can use recruitment technology responsibly.</p>
 
-    <h2>1. Ethical issues</h2>
+    <h2>1. How Automated Recruitment Works</h2>
+    <p>Automated recruitment refers to the use of digital systems to support or perform different stages of the hiring process. For example, a company may use software to:</p>
+    <ul><li>Scan resumes and identify relevant skills.</li><li>Filter applications according to specific requirements.</li><li>Rank candidates based on selected criteria.</li><li>Schedule interviews.</li><li>Analyze information collected during assessments.</li></ul>
+    <p>Some systems use artificial intelligence and machine learning to identify patterns in data and generate predictions or recommendations. Other systems follow predefined rules programmed by people. These technologies should not be confused: not every automated system is necessarily an AI or machine-learning system.</p>
+    <p>Although these tools can make recruitment faster, their results depend on how they are designed, programmed, and used. If the criteria are inappropriate or discriminatory, the system can disadvantage certain groups of candidates.</p>
+    <p>For example, imagine a company that uses previous hiring information to identify the characteristics of successful employees. If the company historically hired more men than women for certain positions, a system trained on that information could reproduce patterns that disadvantage women.</p>
+    <p>This example illustrates an important ethical concern: technology can reproduce existing inequalities instead of eliminating them.</p>
+
+    <h2>2. Real-World Case Study: iTutorGroup</h2>
+    <p>A real example of discriminatory automated recruitment involved iTutorGroup, an online tutoring company.</p>
+    <p>According to the U.S. Equal Employment Opportunity Commission (EEOC), iTutorGroup used application software that automatically rejected female applicants aged 55 or older and male applicants aged 60 or older. The system therefore excluded candidates because of their age and sex before they could receive fair consideration.</p>
+    <p>The EEOC reported that more than 200 qualified applicants in the United States were rejected because of these age-related rules.</p>
+    <p>In May 2022, the EEOC filed a lawsuit against iTutorGroup. In September 2023, the company agreed to pay $365,000 to settle the age discrimination lawsuit.</p>
+    <p>This case is important because it demonstrates that automated recruitment can create discriminatory outcomes. It also shows that a decision made through software is not automatically neutral or fair.</p>
+    <p>It is important to be precise about the technology involved. The EEOC case describes automated application software programmed to reject applicants based on age and sex. The available information does not establish that the system learned these discriminatory rules through machine learning. Nevertheless, the case clearly illustrates the ethical risks of automated decision-making.</p>
+    <p><strong>The main lesson is that employers remain responsible for the rules and decisions implemented through their technology.</strong></p>
+
+    <h2>3. Algorithmic Fairness: What Does Fair Hiring Mean?</h2>
+    <p>Algorithmic fairness is an important concept in AI ethics. It concerns whether automated systems treat individuals and groups fairly and whether their decisions create unjustified disadvantages.</p>
+    <p>Floridi (2023) discusses different approaches to understanding fairness. These approaches help explain why measuring fairness is not always simple.</p>
+    <p><strong>1. Anti-classification.</strong> This approach suggests that protected characteristics, such as age, sex, or race, should not be explicitly used to make decisions about individuals. However, removing these characteristics from an application does not necessarily eliminate discrimination. Other information, known as proxy variables, may indirectly reveal similar characteristics. For example, a postal code could sometimes be associated with a particular social or demographic group.</p>
+    <p><strong>2. Classification parity.</strong> This approach focuses on whether a system makes similar prediction errors across different groups. For example, it examines whether false positive and false negative rates are comparable for different groups of applicants.</p>
+    <p><strong>3. Calibration.</strong> Calibration considers whether the predictions made by a system are equally reliable across different groups. If a system assigns the same probability of success to candidates from different groups, that prediction should have a comparable meaning for each group.</p>
+    <p><strong>4. Statistical parity.</strong> This approach examines whether different groups receive similar rates of positive outcomes. In recruitment, this could mean comparing the proportion of candidates from different groups who are selected for interviews or receive job offers.</p>
+    <p>These approaches show that fairness can be measured in different ways. However, they also have limitations, and some fairness measures may conflict with others. There is no single measurement that guarantees fairness in every situation.</p>
+    <p>For this reason, companies should not depend on only one fairness measure. They should examine how their recruitment systems affect different groups and evaluate whether the criteria are appropriate for the job.</p>
+
+    <h2>4. Applying Five Ethical Principles to Recruitment</h2>
+    <p>Floridi (2023) presents five important principles for evaluating the ethical impact of AI: beneficence, non-maleficence, autonomy, justice, and explicability. These principles can help employers make more responsible decisions when using recruitment technology.</p>
+    <p><strong>1. Beneficence: Promoting good.</strong> Technology should provide real benefits. In recruitment, this means helping employers identify qualified candidates, improving efficiency, and supporting better hiring processes. A system should not be considered successful only because it reduces recruitment costs or saves time. It should also contribute to a positive and fair experience for applicants.</p>
+    <p><strong>2. Non-maleficence: Avoiding harm.</strong> Organizations should prevent technology from causing unnecessary harm. An automated system should not unfairly reject candidates because of their age, sex, disability, or other characteristics unrelated to their ability to perform the job. The iTutorGroup case demonstrates why preventing harm must be a priority.</p>
+    <p><strong>3. Autonomy: Respecting human decision-making.</strong> Candidates should have meaningful opportunities to participate in the recruitment process. They should not be treated simply as data or numbers evaluated by a system. Human beings should remain involved in important hiring decisions, especially when an automated recommendation could significantly affect someone's employment opportunities.</p>
+    <p><strong>4. Justice: Ensuring fairness.</strong> Employers should provide equal opportunities and avoid discriminatory practices. Recruitment criteria must be relevant to the position, and companies should regularly examine whether their systems disadvantage particular groups.</p>
+    <p><strong>5. Explicability: Making decisions understandable.</strong> Candidates and employers should be able to understand how important recruitment decisions are made. Floridi connects explicability with two important dimensions: understanding how a system works and identifying who is ethically responsible for its decisions. For example, if an applicant is rejected automatically, the company should be able to explain the relevant criteria and identify who is responsible for reviewing the system.</p>
+    <p>Together, these five principles provide a practical ethical foundation for responsible recruitment.</p>
+
+    <h2>5. Soft Ethics, Accountability, and Human Oversight</h2>
+    <p>Another important topic in AI ethics is soft ethics. Soft ethics refers to the use of ethical principles, standards, and responsible practices to guide technology development and implementation, beyond simply following legal requirements.</p>
+    <p>Floridi (2023) explains that ethics, regulation, and governance have different but complementary roles:</p>
+    <ul><li><strong>Ethics</strong> helps determine what is morally acceptable and responsible.</li><li><strong>Regulation</strong> establishes legal requirements and obligations.</li><li><strong>Governance</strong> organizes the policies, procedures, and responsibilities needed to put these principles into practice.</li></ul>
+    <p>Following the law is necessary, but it is not always sufficient to guarantee ethical behavior. Companies should consider the possible consequences of a technology before problems occur.</p>
+    <p>One useful approach is an <strong>Ethical Impact Analysis (EIA)</strong>. This involves examining the possible ethical consequences of a digital system before and during its implementation. In recruitment, an organization could use this analysis to identify risks related to discrimination, privacy, transparency, and accountability.</p>
+    <p>Accountability is particularly important. When an automated system produces an unfair result, companies should not blame the technology or claim that the computer made the decision independently. People and organizations remain responsible for selecting, configuring, monitoring, and using these systems.</p>
+    <p>Human oversight is therefore essential. A qualified person should be able to review automated recommendations, identify possible problems, and correct inappropriate decisions.</p>
+
+    <h2>6. Practical Recommendations for Employers</h2>
+    <p>Organizations that use automated recruitment systems should take practical steps to protect candidates and promote fairness.</p>
     <ul>
-      <li><strong>Privacy:</strong> Privacy is a component of fairness. Ethical data science requires balancing data utility with ethical concerns, and privacy is also a human right. The requirement to log in creates a potential link between a student’s identity and their participation.</li>
-      <li><strong>Transparency:</strong> Participants should be informed about what information is being collected, why a login is required, whether identifying data is stored alongside the responses, who can access the original responses, and how the results will be presented.</li>
-      <li><strong>Informed consent:</strong> The organization should explain the purpose of the survey and how the results will be used before students decide whether to participate.</li>
-      <li><strong>Question design:</strong> The example question also warrants attention. A student might believe that most objectives were met, but that one significant objective was not. The question does not specify which objectives are being evaluated, and different students might interpret the scale in different ways. An ethical approach to assessment requires selecting questions and indicators that validly represent the aspect intended for evaluation.</li>
+      <li><strong>Review recruitment criteria.</strong> Employers should ensure that the criteria used by automated systems are directly related to the job. Age, sex, and other protected characteristics should not be used to exclude qualified candidates.</li>
+      <li><strong>Conduct regular fairness audits.</strong> Companies should examine recruitment results across different groups. These reviews can help identify patterns of discrimination or unexpected disadvantages.</li>
+      <li><strong>Protect candidates' privacy.</strong> Recruitment systems collect personal information. Employers should explain what information they collect, why they need it, and how it will be used and protected.</li>
+      <li><strong>Maintain meaningful human oversight.</strong> Automated systems should support recruitment professionals rather than replace their responsibility. Important decisions should be reviewed by people who can question and correct automated results.</li>
+      <li><strong>Improve transparency.</strong> Candidates should receive understandable information about how automated tools are used in the hiring process. Companies should also provide appropriate ways to ask questions or request a review.</li>
+      <li><strong>Perform an Ethical Impact Analysis.</strong> Before introducing a new recruitment system, employers should identify possible risks and consider how the technology could affect applicants. This evaluation should continue as the system is used and updated.</li>
     </ul>
+    <p>These recommendations can help organizations build recruitment processes that are not only efficient but also responsible and respectful of people's rights.</p>
 
-    <h2>2. Other ethical issues present in the survey</h2>
+    <h2>7. Human Responsibility in the Future of Recruitment</h2>
+    <p>Technology will probably continue to play an important role in recruitment. Companies will have access to increasingly sophisticated tools to process applications, analyze information, and support decisions.</p>
+    <p>However, the future of recruitment should not be based only on speed, automation, or cost reduction. It should also consider human dignity, equal opportunities, and social responsibility.</p>
+    <p>A qualified candidate should not lose an employment opportunity because of an inappropriate automated rule. Technology should help organizations recognize people's skills and potential, not create additional barriers.</p>
+    <p>This requires cooperation between employers, developers, recruitment professionals, regulators, and other stakeholders. Each group has a role in ensuring that automated systems are designed and used responsibly.</p>
+    <p>Ultimately, technology should support human judgment, not remove human responsibility.</p>
+
+    <h2>Conclusion</h2>
+    <p>Automated recruitment offers important opportunities for organizations, but it also creates ethical challenges that cannot be ignored. The iTutorGroup case demonstrates that software can exclude qualified candidates through discriminatory rules, even when the process appears objective and efficient.</p>
+    <p>Floridi's five ethical principles—beneficence, non-maleficence, autonomy, justice, and explicability—provide a useful framework for evaluating recruitment technology. In addition, soft ethics, good governance, accountability, transparency, and human oversight can help organizations prevent harm and improve their decisions.</p>
+    <p><strong>The most important lesson is simple: a recruitment system should not be judged only by how quickly it selects candidates, but also by how fairly it treats people.</strong></p>
+    <p>Technology can support better hiring decisions, but fairness does not happen automatically. It requires human responsibility, continuous evaluation, and a genuine commitment to equal opportunities.</p>
+
+    <h2>References</h2>
     <ul>
-      <li><strong>Re-identification:</strong> It may be possible to re-identify participants even after their names have been removed. Eliminating direct identifiers is often insufficient; a combination of attributes or knowledge of the context can reveal an individual’s identity.</li>
-      <li><strong>Bias:</strong> This can affect who responds and how those responses are interpreted. Students who are highly satisfied or highly dissatisfied may be more likely to respond than those with moderate opinions. Students facing language barriers, accessibility needs, limited internet access, or a fear of retaliation may be less likely to participate. Consequently, the responses may not be representative of the entire class.</li>
-      <li><strong>Data minimization:</strong> An organization should collect only the information necessary for its stated purpose. If the goal is to improve courses, the administration may need feedback on each course, but it likely does not require individual identities, detailed login histories, or unnecessary demographic information.</li>
-      <li><strong>Purpose limitation and the progressive expansion of data uses:</strong> Students are informed that the survey will help identify courses in need of updates. The organization should not quietly repurpose these responses for unrelated objectives—such as penalizing individual instructors, making decisions about specific students, or profiling students’ attitudes.</li>
-      <li><strong>Data security and access controls:</strong> The institution should determine who has access to the raw data, whether such access is logged, and when records are deleted. A promise alone does not protect privacy; technical and organizational measures are required.</li>
-      <li><strong>Misleading interpretations and unintended consequences:</strong> If management publishes rankings without context, the results could damage reputations or incentivize instructors to prioritize popularity over learning. Decisions based on weak evidence could lead to unnecessary redesigns or fail to identify courses that are truly in need of improvement.</li>
+      <li>Equal Employment Opportunity Commission. (2022, May 5). <em>EEOC sues iTutorGroup for age discrimination</em>. U.S. Equal Employment Opportunity Commission. <a href="https://www.eeoc.gov/newsroom/eeoc-sues-itutorgroup-age-discrimination" target="_blank" rel="noopener noreferrer">Official EEOC page</a>.</li>
+      <li>Equal Employment Opportunity Commission. (2023, September 11). <em>iTutorGroup to pay $365,000 to settle EEOC discriminatory hiring suit</em>. U.S. Equal Employment Opportunity Commission. <a href="https://www.eeoc.gov/newsroom/itutorgroup-pay-365000-settle-eeoc-discriminatory-hiring-suit" target="_blank" rel="noopener noreferrer">Official EEOC page</a>.</li>
+      <li>Floridi, L. (2023). <em>The ethics of artificial intelligence: Principles, challenges, and opportunities</em>. Oxford University Press.</li>
     </ul>
-
-    <h2>3. Recommendations for executive management</h2>
-    <ul>
-      <li><strong>Verify the claim of anonymity before collecting responses.</strong> If identity data and responses are stored separately, this should be confirmed and documented. If the system allows them to be linked, the survey should not be described as anonymous; it should either be redesigned to prevent such linking or correctly labeled as “confidential,” with clear access restrictions.</li>
-      <li><strong>Explain the process in plain language.</strong> Before the first question, students should be provided with a brief privacy notice explaining the survey’s purpose, what data is being collected, whether login information is kept separate from responses, who has access to the raw data, how the results will be used, how long the data will be retained, and whom to contact with questions. It should also state whether participation is voluntary and whether there are any consequences for declining to respond.</li>
-      <li><strong>Implement data minimization and privacy-preserving preprocessing.</strong> Remove direct identifiers from the dataset whenever possible, limit or avoid the collection of unnecessary metadata, and suppress or aggregate results for very small groups. Free-text comments should be reviewed to remove identifying details before they are shared.</li>
-      <li><strong>Improve the survey.</strong> Replace or supplement general questions with clear, specific questions linked to defined learning objectives. A space for comments can provide context, but students should be advised not to include identifying or sensitive information.</li>
-      <li><strong>Establish governance and accountability.</strong> Assign clear responsibilities for survey administration, privacy protection, data access, analysis, and the approval of reports. Limit access to raw data to authorized personnel, use secure storage and transmission methods, log access, and establish a schedule for data retention and deletion.</li>
-      <li><strong>Present results responsibly.</strong> Display aggregated results, explain limitations, and avoid making unsubstantiated claims about individual students or instructors.</li>
-    </ul>
-
-    <h2>4. What options are available to me to act ethically if my recommendations are rejected?</h2>
-    <p>I can still act responsibly within my role by taking the following steps:</p>
-    <ul>
-      <li>I would document the specific concern, the available evidence, the uncertainties, and the potential consequences. I would distinguish confirmed facts from mere possibilities. For example, I would not claim that the survey definitively identifies students unless the system’s design proves it does. Instead, I would explain that the login requirement raises an issue that must be verified before an absolute guarantee of anonymity can be justified.</li>
-      <li>I would present management with a concise assessment of risks and practical alternatives—such as decoupling authentication from response storage, restricting access to raw data, aggregating results, or revising the privacy notice.</li>
-      <li>I would seek guidance through the appropriate internal channels, such as the privacy officer, the information security team, an ethics committee, the instructor in charge of the course, or another designated governance body.</li>
-      <li>I would refuse to include unsubstantiated claims in my analysis or report. I would provide an honest account of the limitations and recommend that the findings be treated with caution until the issue is resolved.</li>
-      <li>Finally, I would consider formally escalating the matter in accordance with institutional policies and applicable professional obligations. I would not access student records without authorization, publicly disclose confidential information, or alter results to force a desired conclusion. Acting ethically means raising concerns through appropriate channels, protecting the individuals affected, and maintaining the integrity of the analysis. If asked to participate in deception or the misuse of data, I would seek proper guidance and refuse to carry out any specific action that conflicts with my professional responsibilities.</li>
-    </ul>
-    <p>Scientists and data analysts make decisions regarding data, methods, interpretation, and communication. Even if a manager approves a project, the analyst remains responsible for honestly explaining what the evidence can—and cannot—demonstrate.</p>
-
-    <h2>Conclusion: Reliable data requires reliable practices.</h2>
-    <p>“Anonymous” is not just a label to be affixed to a form; it is a property that must be designed, verified, and maintained with integrity. Examining the project through the FAT Flow framework revealed issues regarding fairness in privacy, a lack of transparency, and unclear accountability—from data collection through to reporting. The best data scientists do not merely ask, “Can we do this?” but rather, “Should we, and how?” Answering this second question is what transforms a number on a scale from 0 to 10 into a decision that people can trust.</p>
-    <p>Ethical data science is not simply about gathering enough information to decide; it is about making decisions in a way that respects the individuals represented by that data.</p>
   </article>
   <hr>
   <p><a href="/blogs/">← Return to all blog posts</a></p>
