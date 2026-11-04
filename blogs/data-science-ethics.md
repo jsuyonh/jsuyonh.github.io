@@ -13,7 +13,7 @@ toc: true
 
 # What a Survey Can Teach Us About Data Science Ethics
 
-## Introduction: Can a survey really be anonymous?
+## What a Survey Can Teach Us About Data Science Ethics
 
 As a data analyst, I am hired by an educational institution to process the results of a survey that students are required to complete at the end of a course. Students receive a 10-question survey; to complete it, they must access a specific URL in their web browser—which is available only for a short period—and log in using their organizational username and password.
 
